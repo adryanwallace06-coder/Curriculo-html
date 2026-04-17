@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #6877E0;
+    background: linear-gradient(130deg, rgba(104, 119, 224, 1) 29%, rgba(116, 82, 172, 1) 71%);
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+main {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 1px 0px 30px 20px #0000002c;
+    /* box-shadow:
+    1 Offset-x -> deslocamento x horizontal da sombra
+    2 Offset-y -> deslocamento y vertical da sombra;
+    3 Blur-radius -> raio de desfoque da sombra
+    4 Spread-radius -> raio de expansão da sombra
+    5 Color -> cor da sombra */
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #667eea;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    outline: 1px solid #ffffff;
+    outline-offset: -5px;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 35px;
+    color: white;
+}
+
+h3 {
+    color: #6877e0;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+p {
+    text-align: center;
+    line-height: 1.7;
+    color: #555;
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+}
+
+ul li {
+    list-style: none;
+    background-color: #f7fafc;
+    outline: 2px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 5px 8px;
+    color: #6877e0;
+}
+
+button {
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 8px 25px;
+    border: none;
+    background: linear-gradient(130deg, rgba(104, 119, 224, 1) 29%, rgba(116, 82, 172, 1) 71%);
+    transition: background 3s ease;
+    box-shadow: 0px 0px 10px 5px #6877E02c;
+
+}
+
+button:hover {
+    background: #000000;
+}
