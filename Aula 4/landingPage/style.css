@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Delcaração de variáveis CSS (Custom Properties) */
+:root {
+    /*Cores da Landing Page*/
+    --cor-primaria: #004ac6;
+    --cor-animacao-hover: #003ea8;
+    --cor-fundo: #f8f9ff;
+    --cor-branca: #ffffff;
+    --cor-fundo-secundaria: #eff4ff;
+    --cor-texto: #0b1c30;
+    --cor-text-suave: #434655;
+    --cor-borda: #c3c6d7;
+
+
+    /* Tipografia */
+    --fonte-principal: 'Inter';
+
+    /* Espaçamentos - Medida: rem -> melhor para responsividade, respeita a configuraçãp do usuário */
+    --espaco-xs: 0.5rem; /* 8px */
+    --espaco-sn: 1rem;    /* 16px */
+    --espaco-md: 1.5rem;  /* 24px */
+    --espaco-lg: 2rem;    /* 32px */
+    --espaco-xl: 3rem;   /* 48px */
+    --espaco-xxl: 6rem;   /* 96px */
+
+    /* Bordas arredondadas */
+    --raio-sn: 0.5rem;
+    --raio-md: 0.75rem;
+    --raio-lg: 1rem;
+
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var (--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+.navbar {
+    /* Fixa o menu no topo da página */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*Posicionamento dos intens em camada FRENTE - SOBREPOSTO*/
+    z-index: 99999;
+    background-color: var(--cor-fundo);
+    opacity: 0.85;
+    /* Efeito de vidro opaco */
+    backdrop-filter: blur(12px);
+    border-bottom: solid 1px var(--cor-borda);
+}
+
+.navbar-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1280px;
+    /* Cenraliza o elemento horizontamelte */ 
+    margin: 0 auto;
+    padding: var(--espaco-md) var(--espaco-lg);
+
+}
+
+.navbar-logo {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    letter-spacing: -0.03rem;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    gap: var(--espaco-lg);
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: var(--cor-text-suave);
+    font-size: 0.9375rem;
+    font-weight: 550;
+}
+
+.navbar-links a:hover {
+    color: var(--cor-primaria);
+}
+
+.navbar-botoes {
+    display: flex;
+    align-items: center;
+    gap: var(--espaco-sn);
+}
+
