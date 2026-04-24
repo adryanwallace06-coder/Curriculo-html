@@ -98,3 +98,126 @@ body {
     gap: var(--espaco-sn);
 }
 
+.navbar-button {
+    background-color: var(--cor-primaria);
+    border: none;
+    color: var(--cor-branca);
+    font-size: 0,9375rem;
+    font-weight: 700;
+    padding: 0.8rem 1.25rem;
+    border-radius: var(--raio-md);
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.navbar-button:hover {
+    background-color: var(--cor-animacao-hover);
+    transform: scale(1.05);
+}
+
+.navbar-login-link {
+    text-decoration: none;
+    color: var(--cor-text-suave);
+    font-weight: 550;
+    font-size: 0.9375rem;
+}
+
+.navbar-login-link:hover {
+    color: var(--cor-animacao-hover);
+}
+
+.hero {
+    /* VH - Viewport height = ALTURA TOTAL DA JANELA */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--espaco-lg) var(--espaco-xl);
+}
+
+.hero-label {
+    display: inline-block;
+    /* background-color: #0049c656; */
+    background-color: color-mix(in srgb, var(--cor-primaria) 20%, transparent);
+    text-transform: uppercase;
+    color: var(--cor-primaria);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12rem;
+    padding: 0.375rem 1rem;
+    border-radius: var(--raio-lg);
+    margin-bottom: var(--espaco-lg);
+}
+
+.hero-titulo {
+    /* Clamp - (mínimo, ideal, máximo) significa:width: 
+    - Nunca menor que o "Mínimo" em telas pequenas
+    - Tamanho "Ideal" em telas médias
+    - Nunca maior que o "Máximo" em telas grandes
+    */
+    font-size: clamp(2.5rem, 5.7rem, 4.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.03rem;
+    color: var(--cor-texto);
+    max-width: 56rem;
+    text-align: center;
+    margin-bottom: var(--espaco-md);
+}
+
+.hero-titulo span {
+    color: var(--cor-primaria);
+}
+
+.hero-subtitulo {
+    font-size: clamp(1rem, 1.875rem, 1.25rem);
+    color: var(--cor-text-suave);
+    max-width: 42rem;
+    line-height: 1.7;
+    margin-bottom: var(--espaco-xl);
+    text-align: center;
+}
+
+.hero-botoes {
+    display: flex;
+    gap: var(--espaco-sn);
+}
+
+.btn-funcionalidades {
+    background-color: var(--cor-primaria);
+    border: none;
+    color: var(--cor-branca);
+    font-size: 1.07rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: var(--raio-md);
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.btn-funcionalidades:hover {
+    background-color: var(--cor-animacao-hover);
+    transform: scale(1.05);
+
+}
+
+.btn-saiba-mais {
+    background-color: var(--cor-branca);
+    border: none;
+    outline: 2px solid var(--cor-primaria);
+    color: var(--cor-primaria);
+    font-size: 1.07rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: var(--raio-md);
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.btn-saiba-mais:hover {
+    transform: scale(1.05);
+}
+
+
+
