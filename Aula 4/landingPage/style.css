@@ -48,6 +48,14 @@ body {
 
 }
 
+h2 {
+    font-size: clamp(1.75rem, 3rem, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--cor-texto);
+    margin-bottom: var(--espaco-lg);
+}
+
 .navbar {
     /*Fixa o elemento na tela */
     position: fixed;
@@ -287,13 +295,6 @@ body {
     margin-bottom: var(--espaco-sm);
 }
 
-.sobre-titulo {
-    font-size: clamp(1.75rem, 3rem, 3rem);
-    font-weight: 700;
-    line-height: 1.2;
-    color: var(--cor-texto);
-    margin-bottom: var(--espaco-lg);
-}
 
 .sobre-paragrafo {
     font-size: 1.0625rem;
@@ -349,4 +350,38 @@ body {
     font-size: 0.875rem;
     color: var(--cor-texto-suave);
     line-height: 1.5;
+}
+
+/* SOLUÇÕES */
+
+.solucoes {
+    background-color: var(--cor-fundo-secundario);
+    padding: var(--espaco-xxl) 0;
+}
+
+.solucoes .container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.solucoes-header {
+    text-align: center;
+    margin-bottom: var(--espaco-xxl);
+}
+
+.solucoes-descricao {
+    text-align: center;
+    max-width: 38rem;
+    font-size: 1.0625rem;
+    color: var(--cor-texto-suave);
+    line-height: 1.75;
+    margin: 0 auto;
+}
+
+.cards-grid {
+    display: grid;
+    /* auto-fill: o grid cria quantas colunas couberem  */
+    /* minmax (300px, 1fr): cada cooluna tem no mínimo 300px e no máximo 1fr (distribui   */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--espaco-md);
 }
